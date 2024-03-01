@@ -1,5 +1,5 @@
 // let is a variable that can be changed
-let name = "xxxxxx"
+let name = "ggggghghjhjhj"
 name = "Santiago" 
 let last_name = "Donoso"
 
