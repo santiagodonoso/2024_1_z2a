@@ -2,7 +2,9 @@ function show_full_name(){
    
     let name = document.querySelector("#user_name").value
     let last_name = document.querySelector("#last_name").value
-    let full_name = name + " " + last_name
+    let nickname = document.querySelector("#nickname").value
+    nickname = "<strong>" + nickname + "</strong>"
+    let full_name = name + " " + last_name + " " + nickname
     console.log(full_name)
     document.querySelector("div").innerHTML = full_name
 
