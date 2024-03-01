@@ -1,5 +1,9 @@
 function show_full_name(){
-   alert() 
+   
+    let name = document.querySelector("#user_name").value
+    alert(name)
+
+
 }
 
 
