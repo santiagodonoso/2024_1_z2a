@@ -1,3 +1,11 @@
+function show_full_name(){
+   alert() 
+}
+
+
+
+
+/*
 // let is a variable that can be changed
 let name = "xxxxxx"
 name = "Santiago" 
@@ -8,7 +16,7 @@ let full_name = name + " " + last_name
 console.log(full_name)
 
 // document.querySelector("div")
-
+*/
 
 
 
