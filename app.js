@@ -12,16 +12,19 @@ function step_two(){
    red_light.classList.remove("off")
    yellow_light.classList.remove("off")
    green_light.classList.add("off")
+   setTimeout( step_three, 1000 )
 }
 function step_three(){
    red_light.classList.add("off")
    yellow_light.classList.add("off")
    green_light.classList.remove("off")
+   setTimeout( step_four, 1000 )
 }
 function step_four(){
    red_light.classList.add("off")
    yellow_light.classList.remove("off")
    green_light.classList.add("off")
+   setTimeout( step_one, 1000 )
 }
 
 step_one()
