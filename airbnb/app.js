@@ -12,9 +12,16 @@ let items = [
 
 items.forEach( item => {
     const div_item = `
-        <div class="item">
-            <p>${item}</p>
+    <div class="item">
+        <img src="pictures/1.webp">
+        <div>
+            <p>Denmark</p>
+            <p>5 ⭐</p>
         </div>
+        <div>
+            100 dkk. per night
+        </div>
+    </div>
     `
     div_items.insertAdjacentHTML("afterbegin", div_item)
 })
