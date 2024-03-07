@@ -1,3 +1,5 @@
+const div_items = document.querySelector("#items")
+
 let items = [
     {
         "image" : "pictures/1.webp",
