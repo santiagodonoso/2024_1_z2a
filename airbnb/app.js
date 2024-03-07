@@ -10,7 +10,7 @@ let person = {
     "city" : "Køge",
 }
 
-
+// 10:45
 
 
 /*
