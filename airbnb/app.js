@@ -4,21 +4,53 @@ let items = [
     {
         "image" : "pictures/1.webp",
         "city" : "Copenhagen",
-        "stars" : 5,
+        "stars" : 1,
         "price" : 100
-    }
+    },
+    {
+        "image" : "pictures/2.webp",
+        "city" : "Køge",
+        "stars" : 2,
+        "price" : 200
+    }, 
+    {
+        "image" : "pictures/3.webp",
+        "city" : "Miami",
+        "stars" : 3,
+        "price" : 300
+    },  
+    {
+        "image" : "pictures/4.webp",
+        "city" : "Barcelona",
+        "stars" : 4,
+        "price" : 400
+    },  
+    {
+        "image" : "pictures/5.webp",
+        "city" : "Berlin",
+        "stars" : 5,
+        "price" : 500
+    },                 
 ]
 
 
 items.forEach( item => {
+    let price = item.price
+    let test_class = "normal"
+    if( price < 300 ){
+        console.log("cheap")
+        test_class = "cheap"
+    }else{
+        console.log("normal")
+    }
     const div_item = `
     <div class="item">
         <img src="${item.image}">
         <div>
             <p>${item.city}</p>
-            <p>${item.price} ⭐</p>
+            <p>${item.stars} ⭐</p>
         </div>
-        <div>
+        <div class="${test_class}">
             ${item.price} dkk. per night
         </div>
     </div>
