@@ -13,13 +13,13 @@ let items = [
 items.forEach( item => {
     const div_item = `
     <div class="item">
-        <img src="pictures/1.webp">
+        <img src="${item.image}">
         <div>
-            <p>Denmark</p>
-            <p>5 ⭐</p>
+            <p>${item.city}</p>
+            <p>${item.price} ⭐</p>
         </div>
         <div>
-            100 dkk. per night
+            ${item.price} dkk. per night
         </div>
     </div>
     `
