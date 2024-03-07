@@ -1,16 +1,43 @@
+let items = [
+    {
+        "image" : "pictures/1.webp",
+        "city" : "Copenhagen",
+        "stars" : 5,
+        "price" : 100
+    }
+]
+
+
+items.forEach( item => {
+    const div_item = `
+        <div class="item">
+            <p>${item}</p>
+        </div>
+    `
+    div_items.insertAdjacentHTML("afterbegin", div_item)
+})
+
+
+
+
+
+
+
 // Exercise:
 // Create a JSON object showing data about you.
 // Give a varaiable name to the object "person"
 // Show in the key values:
 // name, last name, age, city where you live
+
+/*
 let person = {
     "name" : "A",
     "last_name" : "B",
     "age" : 10,
     "city" : "Køge",
 }
+*/
 
-// 10:45
 
 
 /*
@@ -34,19 +61,6 @@ item_one.price = 20
 
 console.log(item_one)
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*
