@@ -24,7 +24,7 @@ function step_four(){
    red_light.classList.add("off")
    yellow_light.classList.remove("off")
    green_light.classList.add("off")
-   setTimeout( step_one, 1000 )
+   setTimeout( step_four, 1000 )
 }
 
 step_one()
