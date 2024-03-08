@@ -7,3 +7,9 @@ async function get_data(){
     document.querySelector("#my_name").innerHTML = data
     document.querySelector("img").src = data
 }
+
+async function get_one(){
+    const conn = await fetch("https://paseho.com/1.php")
+    const data = await conn.text()
+    console.log(data)
+}
