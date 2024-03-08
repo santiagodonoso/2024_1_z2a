@@ -1,3 +1,9 @@
+// If the stock quote is between 0 and 4 show red
+// If the stock quote is between 5 and 7 show yellow
+// If the stock quote is between 7 above show green
+
+// 
+
 async function get_stock(){
     // console.log(event) // click
     // console.log(event.target) // button
@@ -7,6 +13,9 @@ async function get_stock(){
     // console.log(data)
     document.querySelector("#companies").innerHTML = ""
     data.forEach( company => {
+
+        // if company.quote <= 4 
+
         // console.log(company)
         const div_company = `
         <div>
