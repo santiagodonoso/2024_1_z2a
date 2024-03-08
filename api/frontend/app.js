@@ -12,6 +12,6 @@ async function get_stock(){
            ${company} 
         </div>
         `
-        document.querySelector("#companies").insertAdjacentHTML("afterbegin", div_company)
+        document.querySelector("#companies").insertAdjacentHTML("beforeend", div_company)
     })
 }
