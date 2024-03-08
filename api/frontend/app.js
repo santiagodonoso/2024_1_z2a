@@ -5,4 +5,5 @@ async function get_data(){
     const data = await conn.text()
     console.log(data)
     document.querySelector("#my_name").innerHTML = data
+    document.querySelector("img").src = data
 }
