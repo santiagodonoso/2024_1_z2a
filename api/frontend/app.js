@@ -1,4 +1,4 @@
-async function get_data(){
+async function get_stock(){
     console.log(event) // click
     console.log(event.target) // button
     const conn = await fetch("https://paseho.com/stock.php")
