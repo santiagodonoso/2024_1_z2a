@@ -13,3 +13,9 @@ async function get_one(){
     const data = await conn.text()
     console.log(data)
 }
+
+async function get_weather(){
+    const conn = await fetch("https://paseho.com/weather.php")
+    const data = await conn.text()
+    document.querySelector("#weather").innerHTML = data
+}
