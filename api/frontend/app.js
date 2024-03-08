@@ -5,11 +5,12 @@ async function get_stock(){
     // const data = await conn.text()
     const data = await conn.json() // Convert to array or JSON automatically
     console.log(data)
+    document.querySelector("#companies").innerHTML = ""
     data.forEach( company => {
         console.log(company)
         const div_company = `
         <div>
-           ${company} 
+           ${company.name} 
         </div>
         `
         document.querySelector("#companies").insertAdjacentHTML("beforeend", div_company)
