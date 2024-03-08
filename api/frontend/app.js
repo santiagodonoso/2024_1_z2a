@@ -5,5 +5,7 @@ async function get_stock(){
     // const data = await conn.text()
     const data = await conn.json() // Convert to array or JSON automatically
     console.log(data)
-    data.forEach( company => {} )
+    data.forEach( company => {
+        console.log(company)
+    })
 }
