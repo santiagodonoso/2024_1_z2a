@@ -7,5 +7,10 @@ async function get_stock(){
     console.log(data)
     data.forEach( company => {
         console.log(company)
+        const div_company = `
+        <div>
+           ${company} 
+        </div>
+        `
     })
 }
